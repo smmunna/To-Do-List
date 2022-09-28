@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+        --@AUTHOR: MINHAZUL ABEDIN MUNNA
+        --@TIME : 25 SEPTEMBER 2022 06:15 PM
+     -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Making a Conatiner -->
+    <div class="container">
+        <div class="header">
+            <h2>To Do List</h2>
+            <img src="./images/hacker.png" alt="Munna" srcset="">
+        </div>
+        <hr>
+        <!-- Input Button/Text for Add Task -->
+        <div class="add-task">
+            <input type="text"  id="input" placeholder="Add Task">
+            <button onclick="addTask()" id="add">Add Task</button>
+        </div>
+        <!-- List of Task -->
+        <h2 class="tasklistheading">Task List</h2>
+
+        <div id="completed-task">
+            
+        </div>
+        <hr>
+        <!-- Completed Task -->
+        <div class="completed-task">
+            <h2>Delete Task One by One</h2>
+            <ul>
+                <li style="list-style-type: none;"><button class="deletebtn" onclick="deleteBtn()">Delete</button></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
